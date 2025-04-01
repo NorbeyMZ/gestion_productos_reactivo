@@ -1,4 +1,4 @@
-name: Pruebas Automatizadas 
+name: Pruebas Automatizadas
 
 on:
   push:
@@ -9,15 +9,17 @@ on:
 jobs:
   test:
     runs-on: ubuntu-latest
-
     steps:
       - uses: actions/checkout@v3
-      
+
       - name: Configurar JDK 17
         uses: actions/setup-java@v3
         with:
           java-version: '17'
           distribution: 'temurin'
+
+      - name: Otorgar permisos de ejecución a mvnw
+        run: chmod +x mvnw
 
       - name: Ejecutar pruebas
         run: ./mvnw test
