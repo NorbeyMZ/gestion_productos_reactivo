@@ -1,0 +1,8 @@
+com\example\productos\GestionProductosApplication.class
+com\example\productos\model\Producto.class
+com\example\productos\controller\ProductoController.class
+com\example\productos\config\SecurityConfig.class
+com\example\productos\model\Producto$ProductoBuilder.class
+com\example\productos\repository\ProductoRepository.class
+com\example\productos\config\MessageConfig.class
+com\example\productos\service\ProductoService.class
